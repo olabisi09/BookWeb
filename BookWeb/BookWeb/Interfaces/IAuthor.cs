@@ -10,7 +10,7 @@ namespace BookWeb.Interfaces
     {
         void Add(Author author);
         Task<bool> AddAsync(Author author);
-        Task<bool> Update(Author author);
+        Task<bool> Update(Author author, int Id);
         Task<IEnumerable<Author>> GetAll();
         Task<Author> GetById(int Id);
         Task<bool> Delete(int Id);

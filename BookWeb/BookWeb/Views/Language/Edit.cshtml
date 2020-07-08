@@ -1,0 +1,36 @@
+﻿@model BookWeb.Entities.Language
+@{
+    ViewData["Title"] = "Languages";
+}
+
+<div class="main-content" id="panel">
+    <div class="container mt--8 pb-5">
+        <div class="row justify-content-center" style="padding-top:200px;">
+            <div class="col-lg-5 col-md-7">
+                <div class="card bg-secondary border-0 mb-0">
+
+                    <div class="card-body px-lg-5 py-lg-5">
+                        <div class="text-center text-muted mb-4">
+                            <small>New Language</small>
+                        </div>
+                        <form asp-controller="Language" method="post" role="form">
+                            <div class="form-group mb-3">
+                                <div class="input-group input-group-merge input-group-alternative">
+                                    <input asp-for="LanguageName" class="form-control" placeholder="Language Name" required="">
+                                </div>
+                            </div>
+
+
+
+                            <div class="text-center">
+                                <button asp-action="Edit" type="submit" class="btn btn-primary my-4">Save Changes</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+

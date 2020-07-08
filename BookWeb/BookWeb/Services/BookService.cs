@@ -54,8 +54,7 @@ namespace BookWeb.Services
 
         public async Task<IEnumerable<Book>> GetAll()
         {
-
-            return await _context.Books.ToListAsync();
+            return await _context.Books.Include(a => a.Author).Include(g => g.Genre).ToListAsync();
         }
 
         public async Task<Book> GetById(int Id)

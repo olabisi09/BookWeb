@@ -70,22 +70,23 @@ namespace BookWeb.Controllers
             return View();
         }
 
-        //public async Task<IActionResult> Edit(int id)
-        //{
-        //    var editAuthor = await _author.GetById(id);
+        [HttpGet]
+        public async Task<IActionResult> Edit(int id)
+        {
+            var editAuthor = await _author.GetById(id);
 
-        //    if (editAuthor == null)
-        //    {
-        //        return RedirectToAction("Index");
-        //    }
-        //    return View(editAuthor);
-        //}
+            if (editAuthor == null)
+            {
+                return RedirectToAction("Index");
+            }
+            return View(editAuthor);
+        }
 
         [HttpPost]
         public async Task<IActionResult> Edit(Author author)
         {
             //var editAuthor = await _author.GetById(id);
-            var editAuthor = await _author.Update(author);
+            var editAuthor = await _author.Update(author, author.Id);
 
             if (editAuthor)
             {

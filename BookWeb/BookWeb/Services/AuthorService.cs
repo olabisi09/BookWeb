@@ -64,9 +64,9 @@ namespace BookWeb.Services
             return author;
         }
 
-        public async Task<bool> Update(Author author)
+        public async Task<bool> Update(Author author, int Id)
         {
-            var aut = await _context.Authors.FindAsync(author.Id);
+            var aut = await _context.Authors.FindAsync(Id);
             if (aut != null)
             {
                 aut.Title = author.Title;

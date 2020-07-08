@@ -15,18 +15,12 @@
                         </div>
                         <form asp-controller="Author" method="post" role="form">
                             <div class="form-group mb-3">
-                                <div class="input-group input-group-merge input-group-alternative">
-                                    <div class="input-group-prepend">
-                                        <span asp-validation-for="Title" class="input-group-text"><i class="ni ni-email-83"></i></span>
-                                    </div>
+                                <div class="input-group input-group-merge input-group-alternative">                                   
                                     <input asp-for="Title" class="form-control" placeholder="Title" required="">
                                 </div>
                             </div>
                             <div class="form-group mb-3">
                                 <div class="input-group input-group-merge input-group-alternative">
-                                    <div class="input-group-prepend">
-                                        <span asp-validation-for="Name" class="input-group-text"><i class="ni ni-email-83"></i></span>
-                                    </div>
                                     <input asp-for="Name" class="form-control" placeholder="Name" required="">
                                 </div>
                             </div>

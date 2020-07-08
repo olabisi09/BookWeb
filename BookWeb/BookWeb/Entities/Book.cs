@@ -20,18 +20,8 @@ namespace BookWeb.Entities
         public int Rating { get; set; }
         public string Summary { get; set; }
         public string CreatedBy { get; set; }
-        private DateTime? dateCreated = null;
-        public DateTime DateCreated
-        {
-            get
-            {
-                return dateCreated.HasValue
-                   ? dateCreated.Value
-                   : DateTime.Now;
-            }
-
-            set { dateCreated = value; }
-
-        }
+        public DateTime DateCreated { get; set; }
+        public Author Author { get; set; }
+        public Genre Genre { get; set; }
     }
 }

@@ -9,6 +9,7 @@ using BookWeb.Interfaces;
 using BookWeb.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace BookWeb.Controllers
 {
@@ -17,10 +18,14 @@ namespace BookWeb.Controllers
     public class BookController : BaseController
     {
         private IBook _book;
+        private IAuthor _author;
+        private IGenre _genre;
         private readonly UserManager<ApplicationUser> _userManager;
-        public BookController(IBook book, UserManager<ApplicationUser> userManager)
+        public BookController(IBook book, IAuthor author, IGenre genre, UserManager<ApplicationUser> userManager)
         {
             _book = book;
+            _author = author;
+            _genre = genre;
             _userManager = userManager;
         }
 
@@ -32,10 +37,27 @@ namespace BookWeb.Controllers
                 return View(model);
             return View();
         }
-        [HttpGet]
-        public IActionResult Create()
-        {
 
+        [HttpGet]
+        public async Task<IActionResult> Create()
+        {
+            var author = await _author.GetAll();
+            var genre = await _genre.GetAll();
+            
+            var authorList = author.Select(a => new SelectListItem()
+            {
+                Value = a.Id.ToString(),
+                Text = a.Title + " " + a.Name
+            });
+
+            var genreList = genre.Select(g => new SelectListItem()
+            {
+                Value = g.Id.ToString(),
+                Text = g.Name
+            });
+
+            ViewBag.genre = genreList;
+            ViewBag.author = authorList;
             return View();
         }
 
@@ -44,6 +66,7 @@ namespace BookWeb.Controllers
         public async Task<IActionResult> Create(Book book)
         {
             book.CreatedBy = _userManager.GetUserName(User);
+            book.DateCreated = DateTime.Now;
             var createBook = await _book.AddAsync(book);
 
             if (createBook)

@@ -16,57 +16,52 @@
                         <form asp-controller="Book" method="post" role="form">
                             <div class="form-group mb-3">
                                 <div class="input-group input-group-merge input-group-alternative">
-                                    <div class="input-group-prepend">
+                                    @*<div class="input-group-prepend">
                                         <span asp-validation-for="Title" class="input-group-text"><i class="ni ni-email-83"></i></span>
-                                    </div>
+                                    </div>*@
                                     <input asp-for="Title" class="form-control" placeholder="Title" required="">
                                 </div>
                             </div>
                             <div class="form-group mb-3">
-                                <div class="input-group input-group-merge input-group-alternative">
-                                    <div class="input-group-prepend">
-                                        <span asp-validation-for="AuthorId" class="input-group-text"><i class="ni ni-email-83"></i></span>
-                                    </div>
-                                    <input asp-for="AuthorId" class="form-control" placeholder="Author ID" required="">
-                                </div>
+                                <select class="form-control" asp-for="AuthorId" asp-items="@ViewBag.author">
+                                    <option>Author</option>
+                                </select>
+                            </div>
+                            <div class="form-group mb-3">
+                                <select class="form-control" asp-for="GenreID" asp-items="@ViewBag.genre">
+                                    <option>Genre</option>
+                                </select>
                             </div>
                             <div class="form-group mb-3">
                                 <div class="input-group input-group-merge input-group-alternative">
-                                    <div class="input-group-prepend">
-                                        <span asp-validation-for="GenreID" class="input-group-text"><i class="ni ni-email-83"></i></span>
-                                    </div>
-                                    <input asp-for="GenreID" class="form-control" placeholder="Genre ID" required="">
-                                </div>
-                            </div>
-                            <div class="form-group mb-3">
-                                <div class="input-group input-group-merge input-group-alternative">
-                                    <div class="input-group-prepend">
+                                    @*<div class="input-group-prepend">
                                         <span asp-validation-for="ISBN" class="input-group-text"><i class="ni ni-email-83"></i></span>
-                                    </div>
+                                    </div>*@
                                     <input asp-for="ISBN" class="form-control" placeholder="ISBN" required="">
                                 </div>
                             </div>
                             <div class="form-group mb-3">
                                 <div class="input-group input-group-merge input-group-alternative">
-                                    <div class="input-group-prepend">
+                                    @*<div class="input-group-prepend">
                                         <span asp-validation-for="YearPublish" class="input-group-text"><i class="ni ni-email-83"></i></span>
-                                    </div>
+                                    </div>*@
                                     <input asp-for="YearPublish" class="form-control" placeholder="Year Published" required="">
                                 </div>
                             </div>
                             <div class="form-group mb-3">
                                 <div class="input-group input-group-merge input-group-alternative">
-                                    <div class="input-group-prepend">
+                                    @*<div class="input-group-prepend">
                                         <span asp-validation-for="Rating" class="input-group-text"><i class="ni ni-email-83"></i></span>
-                                    </div>
+                                    </div>*@
                                     <input asp-for="Rating" class="form-control" placeholder="Rating" required="">
+
                                 </div>
                             </div>
                             <div class="form-group mb-3">
                                 <div class="input-group input-group-merge input-group-alternative">
-                                    <div class="input-group-prepend">
+                                    @*<div class="input-group-prepend">
                                         <span asp-validation-for="Summary" class="input-group-text"><i class="ni ni-email-83"></i></span>
-                                    </div>
+                                    </div>*@
                                     <input asp-for="Summary" class="form-control" placeholder="Summary" required="">
                                 </div>
                             </div>
@@ -91,4 +86,4 @@
     </div>
 </div>
 
-    
+

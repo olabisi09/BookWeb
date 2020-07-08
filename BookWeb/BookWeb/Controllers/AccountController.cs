@@ -40,6 +40,12 @@ namespace BookWeb.Controllers
             _userManager = userManager;
         }
 
+        [HttpGet]
+        public IActionResult Profile()
+        {
+            return View();
+        }
+
         public IActionResult Login()
         {
             return View();
@@ -69,6 +75,7 @@ namespace BookWeb.Controllers
             if (!ModelState.IsValid)
             {
                 ModelState.AddModelError("", "UserName/Password is incorrect");
+                Alert("Invalid username or password", NotificationType.error);
                 return View();
             }
 

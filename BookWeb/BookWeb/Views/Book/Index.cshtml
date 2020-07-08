@@ -18,6 +18,7 @@
                     </nav>
                 </div>
                 <div class="col-lg-6 col-5 text-right">
+                    
                     <a asp-controller="Book" asp-action="Create" class="btn btn-sm btn-neutral">New Book</a>
                 </div>
             </div>
@@ -40,8 +41,8 @@
                             <tr>
                                 <th scope="col" class="sort" data-sort="name">Id</th>
                                 <th scope="col" class="sort" data-sort="budget">Title</th>
-                                <th scope="col" class="sort" data-sort="status">Author Id</th>
-                                <th scope="col" class="sort" data-sort="status">Genre Id</th>
+                                <th scope="col" class="sort" data-sort="status">Author</th>
+                                <th scope="col" class="sort" data-sort="status">Genre</th>
                                 <th scope="col" class="sort" data-sort="status">ISBN</th>
                                 <th scope="col" class="sort" data-sort="status">Year Published</th>
                                 <th scope="col" class="sort" data-sort="status">Rating</th>
@@ -57,8 +58,8 @@
                                 <tr>
                                     <td>@book.Id</td>
                                     <td>@book.Title</td>
-                                    <td>@book.AuthorId</td>
-                                    <td>@book.GenreID</td>
+                                    <td>@book.Author.Name</td>
+                                    <td>@book.Genre.Name</td>
                                     <td>@book.ISBN</td>
                                     <td>@book.YearPublish</td>
                                     <td>@book.Rating</td>
