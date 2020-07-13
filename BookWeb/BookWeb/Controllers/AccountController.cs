@@ -74,8 +74,8 @@ namespace BookWeb.Controllers
         {
             if (!ModelState.IsValid)
             {
-                ModelState.AddModelError("", "UserName/Password is incorrect");
                 Alert("Invalid username or password", NotificationType.error);
+                ModelState.AddModelError("", "UserName/Password is incorrect");
                 return View();
             }
 

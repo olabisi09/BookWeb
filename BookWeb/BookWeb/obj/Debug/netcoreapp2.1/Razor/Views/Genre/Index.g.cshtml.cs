@@ -77,7 +77,7 @@ using BookWeb.Models;
                             <li class=""breadcrumb-item"">");
             EndContext();
             BeginContext(653, 75, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fbd936b0f6c6474aac8b2c89a66b59a9", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5805aad10a1c435ab35786b98c5dc168", async() => {
                 BeginContext(697, 27, true);
                 WriteLiteral("<i class=\"fas fa-home\"></i>");
                 EndContext();
@@ -108,7 +108,7 @@ using BookWeb.Models;
                     ");
             EndContext();
             BeginContext(1076, 90, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b2ff690e50da45988e177bcc0824ff88", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bca06c547f83405a9ed3528bdcf11a1b", async() => {
                 BeginContext(1153, 9, true);
                 WriteLiteral("New Genre");
                 EndContext();
@@ -215,7 +215,7 @@ using BookWeb.Models;
                                                 ");
             EndContext();
             BeginContext(3272, 76, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c191c1b06de547ad8433128b88737478", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0c746aaeda3f459c99710252e19e26aa", async() => {
                 BeginContext(3340, 4, true);
                 WriteLiteral("Edit");
                 EndContext();
@@ -251,7 +251,7 @@ using BookWeb.Models;
             WriteLiteral("\r\n                                                ");
             EndContext();
             BeginContext(3398, 163, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "299e123dbe6a44439b9f27331187cea7", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1cb04c27b5824aa793755f8271561940", async() => {
                 BeginContext(3551, 6, true);
                 WriteLiteral("Delete");
                 EndContext();

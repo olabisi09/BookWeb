@@ -82,7 +82,7 @@ using BookWeb.Models;
                     ");
             EndContext();
             BeginContext(1046, 92, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "932fab27d86247959010baf608ad8fd4", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "86b09be8d9334e9587c07caf3460c659", async() => {
                 BeginContext(1124, 10, true);
                 WriteLiteral("New Author");
                 EndContext();
@@ -198,7 +198,7 @@ using BookWeb.Models;
                                                 ");
             EndContext();
             BeginContext(3402, 77, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9c2452327fae4f13808f22fcea424e71", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c1e1f4bd099341fcbc3899849b8cd2e6", async() => {
                 BeginContext(3471, 4, true);
                 WriteLiteral("Edit");
                 EndContext();
@@ -234,7 +234,7 @@ using BookWeb.Models;
             WriteLiteral("\r\n                                                ");
             EndContext();
             BeginContext(3529, 166, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8c9a7b7eaf9d463f8e15e503d677c0b1", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d77a7e1f072644a4ba82547a4f8c2412", async() => {
                 BeginContext(3685, 6, true);
                 WriteLiteral("Delete");
                 EndContext();

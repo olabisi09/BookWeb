@@ -82,7 +82,7 @@ using BookWeb.Models;
                     ");
             EndContext();
             BeginContext(1051, 96, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e2e085d8b3774ab49e574dd736e190f5", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e4be3fddf51d413383930533eaa23f58", async() => {
                 BeginContext(1131, 12, true);
                 WriteLiteral("New Category");
                 EndContext();
@@ -198,7 +198,7 @@ using BookWeb.Models;
                                                 ");
             EndContext();
             BeginContext(3449, 79, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2773cb8eb32145b1b12e1317650a6c85", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1493a28f0f0a4ec6aef5487fe7239a06", async() => {
                 BeginContext(3520, 4, true);
                 WriteLiteral("Edit");
                 EndContext();
@@ -234,7 +234,7 @@ using BookWeb.Models;
             WriteLiteral("\r\n                                                ");
             EndContext();
             BeginContext(3578, 180, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6d46fe7197474a99a66bc30fbc555e47", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "553a211200f34935af1c0195c1f69cee", async() => {
                 BeginContext(3748, 6, true);
                 WriteLiteral("Delete");
                 EndContext();
