@@ -13,8 +13,6 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace BookWeb.Controllers
 {
-    //[Route("api/book")]
-    //[ApiController]
     public class BookController : BaseController
     {
         private IBook _book;
@@ -84,15 +82,26 @@ namespace BookWeb.Controllers
         [HttpGet]
         public async Task<IActionResult> Edit(int id)
         {
-            var editBook = await _book.GetById(id);
+            var author = await _author.GetAll();
+            var genre = await _genre.GetAll();
 
-            if (editBook == null)
+            var authorList = author.Select(a => new SelectListItem()
             {
-                
-                return RedirectToAction("Index");
-            }
-            
-            return View(editBook);
+                Value = a.Id.ToString(),
+                Text = a.Title + " " + a.Name
+            });
+
+            var genreList = genre.Select(g => new SelectListItem()
+            {
+                Value = g.Id.ToString(),
+                Text = g.Name
+            });
+
+            var book = await _book.GetById(id);
+            ViewBag.genre = genreList;
+            ViewBag.author = authorList;
+
+            return View(book);
         }
 
         [HttpPost]

@@ -83,6 +83,7 @@ namespace BookWeb.Controllers
 
             if (signin)
             {
+                Alert("Welcome!", NotificationType.success);
                 return RedirectToAction("Index", "Home");
             }
             return View();

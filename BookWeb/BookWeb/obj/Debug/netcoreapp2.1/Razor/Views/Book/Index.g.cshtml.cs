@@ -82,7 +82,7 @@ using BookWeb.Models;
                     ");
             EndContext();
             BeginContext(1017, 88, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "660f3cb9cc4f4b609609c0d285d7829a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c6b40699da464db1acbb7a95a83a483d", async() => {
                 BeginContext(1093, 8, true);
                 WriteLiteral("New Book");
                 EndContext();
@@ -258,7 +258,7 @@ using BookWeb.Models;
                                                 ");
             EndContext();
             BeginContext(4144, 75, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ac63ea2203ab48a3b0a69f1d30c7f184", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "71dae1f3612e418fb9bdcb3da824f536", async() => {
                 BeginContext(4211, 4, true);
                 WriteLiteral("Edit");
                 EndContext();
@@ -294,7 +294,7 @@ using BookWeb.Models;
             WriteLiteral("\r\n                                                ");
             EndContext();
             BeginContext(4269, 161, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0f49e7e7781149ee8a6f8acf7376fc4d", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a8057cb31901466b89362191cc0e985b", async() => {
                 BeginContext(4420, 6, true);
                 WriteLiteral("Delete");
                 EndContext();
