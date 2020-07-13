@@ -12218,11 +12218,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DELL\\source\\repos\\BookWeb\\BookWeb\\BookWeb.csproj",
+      "projectUniqueName": "C:\\Users\\DELL\\BookWeb\\BookWeb\\BookWeb\\BookWeb.csproj",
       "projectName": "BookWeb",
-      "projectPath": "C:\\Users\\DELL\\source\\repos\\BookWeb\\BookWeb\\BookWeb.csproj",
+      "projectPath": "C:\\Users\\DELL\\BookWeb\\BookWeb\\BookWeb\\BookWeb.csproj",
       "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DELL\\source\\repos\\BookWeb\\BookWeb\\obj\\",
+      "outputPath": "C:\\Users\\DELL\\BookWeb\\BookWeb\\BookWeb\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
