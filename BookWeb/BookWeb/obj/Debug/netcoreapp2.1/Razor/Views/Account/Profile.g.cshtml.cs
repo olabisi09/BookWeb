@@ -66,7 +66,7 @@ using BookWeb.Entities;
             WriteLiteral("\r\n<!DOCTYPE html>\r\n<html>\r\n\r\n");
             EndContext();
             BeginContext(196, 909, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "37dc8111ac7140e883a1d9c1bb6187a2", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d79ffd8ecb6441289ff56479a09e0743", async() => {
                 BeginContext(202, 698, true);
                 WriteLiteral(@"
     <meta charset=""utf-8"">
@@ -106,7 +106,7 @@ using BookWeb.Entities;
             WriteLiteral("\r\n\r\n");
             EndContext();
             BeginContext(1109, 13186, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "16b14eef1bd242f398e66c6b779c6390", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b47b91c941d34d0a997eace7be037ada", async() => {
                 BeginContext(1115, 733, true);
                 WriteLiteral(@"
     <!-- Sidenav -->
@@ -216,7 +216,7 @@ using BookWeb.Entities;
                             ");
                 EndContext();
                 BeginContext(6320, 5678, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08464f7084464eeb9b0fea99a2e303bc", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7c9c3b67b8df41eda44282386f29dac5", async() => {
                     BeginContext(6326, 5665, true);
                     WriteLiteral(@"
                                 <h6 class=""heading-small text-muted mb-4"">User information</h6>
